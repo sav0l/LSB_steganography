@@ -1,0 +1,4 @@
+PyQt5~=5.15.10
+pillow~=10.3.0
+bitarray~=2.9.2
+numpy~=1.26.4
