@@ -90,12 +90,12 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label.setText(_translate("MainWindow", "Путь к исходному стегоконтейнеру:"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Steganography"))
+        self.label.setText(_translate("MainWindow", "Input image:"))
         self.pushButton_fileDialogIn.setText(_translate("MainWindow", "..."))
-        self.label_2.setText(_translate("MainWindow", "Пароль:"))
-        self.label_4.setText(_translate("MainWindow", "Путь к конечному стегоконтейнеру:"))
+        self.label_2.setText(_translate("MainWindow", "Password:"))
+        self.label_4.setText(_translate("MainWindow", "Output image:"))
         self.pushButton_fileDialogOut.setText(_translate("MainWindow", "..."))
-        self.label_3.setText(_translate("MainWindow", "Скрываемое сообщение:"))
-        self.pushButton_hideMessage.setText(_translate("MainWindow", "Скрыть сообщение"))
-        self.pushButton_getMessage.setText(_translate("MainWindow", "Получить сообщение"))
+        self.label_3.setText(_translate("MainWindow", "Message:"))
+        self.pushButton_hideMessage.setText(_translate("MainWindow", "Hide message"))
+        self.pushButton_getMessage.setText(_translate("MainWindow", "Get message"))

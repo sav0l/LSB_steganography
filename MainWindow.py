@@ -19,12 +19,14 @@ class MainWindow(QMainWindow):
     @pyqtSlot()
     def on_pushButton_fileDialogIn_clicked(self) -> None:
         self.ui.lineEdit_pathIn.setText(
-            QFileDialog.getOpenFileName(self, "Выберите стегоконтейнер", sys.path[0], "BMP (*.bmp)")[0])
+            QFileDialog.getOpenFileName(self, "Select the input image", sys.path[0],
+                                        "All image types (*.bmp *.png);; BMP (*.bmp);; PNG (*.png)")[0])
 
     @pyqtSlot()
     def on_pushButton_fileDialogOut_clicked(self) -> None:
         self.ui.lineEdit_pathOut.setText(
-            QFileDialog.getSaveFileName(self, "Конечный стегоконтейнер", sys.path[0], "BMP (*.bmp)")[0])
+            QFileDialog.getSaveFileName(self, "Select the save path the output image", sys.path[0],
+                                        "All image types (*.bmp *.png);; BMP (*.bmp);; PNG (*.png)")[0])
 
     @pyqtSlot()
     def on_pushButton_getMessage_clicked(self) -> None:
@@ -51,7 +53,7 @@ class MainWindow(QMainWindow):
         img.load()
         img.convert(mode="RGB")
         out = MainWindow.hide_message(text, password, img)
-        out.save(save_path, mode="RGB", quality=100, format="BMP")
+        out.save(save_path, mode="RGB", quality=100)
         self.ui.lineEdit_pathOut.clear()
         self.ui.lineEdit_pathIn.clear()
         self.ui.plainTextEdit.clear()

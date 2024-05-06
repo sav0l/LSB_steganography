@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Steganography</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -20,7 +20,7 @@
       <item row="0" column="0">
        <widget class="QLabel" name="label">
         <property name="text">
-         <string>Путь к исходному стегоконтейнеру:</string>
+         <string>Input image:</string>
         </property>
        </widget>
       </item>
@@ -56,7 +56,7 @@
       <item row="2" column="0">
        <widget class="QLabel" name="label_2">
         <property name="text">
-         <string>Пароль:</string>
+         <string>Password:</string>
         </property>
        </widget>
       </item>
@@ -66,7 +66,7 @@
       <item row="1" column="0">
        <widget class="QLabel" name="label_4">
         <property name="text">
-         <string>Путь к конечному стегоконтейнеру:</string>
+         <string>Output image:</string>
         </property>
        </widget>
       </item>
@@ -104,7 +104,7 @@
     <item>
      <widget class="QLabel" name="label_3">
       <property name="text">
-       <string>Скрываемое сообщение:</string>
+       <string>Message:</string>
       </property>
      </widget>
     </item>
@@ -122,14 +122,14 @@
       <item>
        <widget class="QPushButton" name="pushButton_hideMessage">
         <property name="text">
-         <string>Скрыть сообщение</string>
+         <string>Hide message</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_getMessage">
         <property name="text">
-         <string>Получить сообщение</string>
+         <string>Get message</string>
         </property>
        </widget>
       </item>
