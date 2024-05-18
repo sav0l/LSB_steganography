@@ -1,6 +1,6 @@
 # LSB Steganography
 
-This project implements a steganographic method, which consists in hiding messages in the lower bits of the image.
+This project implements a steganographic method, which consists in hiding messages in the lower bits of the image (png or bmp formats).
 This method can be used to hide information in images saved in bmp, png format
 
 ##### Installation
